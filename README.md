@@ -29,10 +29,13 @@
 * Check log file `/ndebug.log`.
 * The log file is not always written: Best practice is to start a game, then plug in your controller, then quit.
 
-#### Download ###
-* [Release](https://github.com/revvv/Nintendont-XBOX360/releases/)
-* Unpack it to your SD card.
-* Put games in folder `/games`
+### Quick Installation:
+1. Get the [loader.dol](loader/loader.dol?raw=true), rename it to boot.dol and put it in /apps/Nintendont/ along with the files [meta.xml](nintendont/meta.xml?raw=true) and [icon.png](nintendont/icon.png?raw=true).
+2. Copy your GameCube games to the /games/ directory. Subdirectories are optional for 1-disc games in ISO/GCM and CISO format.
+   * For 2-disc games, you should create a subdirectory /games/MYGAME/ (where MYGAME can be anything), then name disc 1 as "game.iso" and disc 2 as "disc2.iso".
+   * For extracted FST, the FST must be located in a subdirectory, e.g. /games/FSTgame/sys/boot.bin .
+3. Connect your storage device to your Wii or Wii U and start The Homebrew Channel.
+4. Select Nintendont.
 * *Optional:* Configure button layout in [/controller/045e_028e.ini](https://github.com/revvv/Nintendont-XBOX360/blob/master/controllerconfigs/045e_028e.ini).<br>
   __NEW:__ Fixed XBOX360 rumble for vWii<br>
   __NEW:__ Support 3rd party WiiMote + Nunchuk (labeled with "NEW2in1" and "Motion plus", distributed by Haiwai Consulting/Tiger-Zhou UG)
